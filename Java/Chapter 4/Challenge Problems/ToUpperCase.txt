@@ -1,0 +1,1 @@
+this text document will be appended to uppercase.

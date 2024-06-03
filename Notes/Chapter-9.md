@@ -1,3 +1,4 @@
+# 9.1 Intro to Wrapper Classes
 **Concept**: Java provides wrapper classes for the primitive data types. The wrapper class for a given primitive type contains not only a value of that type, but also methods that perform operations related to the type. 
 
 A wrapper class allows you to wrap around a primitive data type and allows you to create objects instead of variables. They provide methods that perform useful operations on primitive values.
@@ -1168,3 +1169,28 @@ No more scores.
 - Thinking of the first position of a string as 1. Many of the String and StringBuilder methods accept a character position within a string as an argument. Remember, the position numbers in a string start at zero. If you think of the first position in a string as 1, you will cause an off-by-one error.
 - Thinking of the ending position of a substring as part of the substring. Methods such as getChars accept the starting and ending position of a substring as arguments. The character at the start position is included in the substring, but the character at the end position is not included. (The last character in the substring ends at end – 1.)
 - Forgetting to trim a string before tokenizing it. When tokenizing a string, and using characters other than whitespaces as delimiters, you will probably want to trim the string before tokenizing it. Otherwise, if the string contains leading and/or trailing whitespace characters, they will become part of the first and last tokens.
+
+
+# Challenge Problems
+
+1, 2, 4, 14
+
+## Backward String
+Write a method that accepts a String object as an argument and displays its contents backward. For instance, if the string argument is “gravity” the method should display -“ytivarg”. Demonstrate the method in a program that asks the user to input a string and then passes it to the method.
+
+## Word Counter
+Write a method that accepts a String object as an argument and returns the number of words it contains. For instance, if the argument is “Four score and seven years ago” the method should return the number 6. Demonstrate the method in a program that asks the user to input a string and then passes it to the method. The number of words in the string should be displayed on the screen.
+
+## Vowels and Consonants
+Write a class with a constructor that accepts a String object as its argument. The class should have a method that returns the number of vowels in the string, and another method that returns the number of consonants in the string. Demonstrate the class in a program that performs the following steps:
+	1. The user is asked to enter a string.
+	2. The program displays the following menu:
+		Count the number of vowels in the string
+		Count the number of consonants in the string
+		Count both the vowels and consonants in the string
+		Enter another string
+		Exit the program
+	3. The program performs the operation selected by the user and repeats until the user selects e, to exit the program.
+
+## Word Separator
+Write a program that accepts as input a sentence in which all of the words are run together, but the first character of each word is uppercase. Convert the sentence to a string in which the words are separated by spaces and only the first word starts with an uppercase letter. For example, the string “StopAndSmellTheRoses.” would be converted to “Stop and smell the roses.”
